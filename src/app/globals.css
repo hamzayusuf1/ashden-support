@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-charcoal: #1A2B2A;
+  --color-charcoal-soft: #2C3E3B;
+  --color-forest: #152E2B;
+  --color-green: #2F8F83;
+  --color-green-dark: #247068;
+  --color-green-mid: #3AA090;
+  --color-green-light: #D8EDE9;
+  --color-green-faint: #EEF7F5;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F2EDE4;
+  --color-warm-white: #FDFCF9;
+  --color-grey-light: #F2F3F2;
+  --color-grey-mid: #DFE1E0;
+  --color-grey-text: #5E6E6B;
+  --font-display: var(--font-outfit);
+  --font-sans: var(--font-jakarta);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1A2B2A;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.55s ease-out both;
+}
