@@ -11,7 +11,6 @@ const pages = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/policies", label: "Policies" },
-  { href: "/carbon-reduction-plan", label: "Carbon Reduction Plan" },
   { href: "/social-value", label: "Social Value" },
 ];
 
