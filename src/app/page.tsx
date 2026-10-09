@@ -5,7 +5,9 @@ import CredentialsStrip from "@/components/CredentialsStrip";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ashden Support | Ofsted-Registered Supported Accommodation, Birmingham",
+  title: {
+    absolute: "Ashden Support | Ofsted-Registered Supported Accommodation, Birmingham",
+  },
   description:
     "Ashden Support Ltd provides Ofsted-registered supported accommodation for looked-after young people aged 16 and 17. URN 2907824.",
 };
@@ -39,8 +41,8 @@ const pillars = [
 
 const principles = [
   "Every young person has a named keyworker who remains consistent throughout their placement.",
-  "Appropriate staffing is maintained at all times, including sleep-in cover every night.",
-  "Support plans are written within 28 days of placement and shared with the placing authority.",
+  "There is one support worker per young person on every day shift. Overnight cover is a sleep-in or a waking night worker, depending on assessed needs.",
+  "Support plans are co-produced with the young person within 48 hours of placement and shared with the placing authority.",
   "We assess each referral carefully. If a placement is not right for this young person, we say so.",
 ];
 
@@ -117,10 +119,6 @@ export default function HomePage() {
                 <div className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-white/60 mt-0.5 shrink-0" />
                   <span>Company No. 17013754</span>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-white/60 mt-0.5 shrink-0" />
-                  <span>Registered with the ICO</span>
                 </div>
               </div>
             </div>
@@ -202,7 +200,7 @@ export default function HomePage() {
                   Ashden Support was established to deliver a focused, accountable service for young people who need consistent support and a stable environment. Our approach centres on clear documentation, open communication with placing authorities, and consistent relationships between staff and young people.
                 </p>
                 <p>
-                  All staff are qualified and receive regular ongoing training. Safeguarding is led by the RSM and is central to how the service runs.
+                  Staff are recruited through safer recruitment and complete a face-to-face induction before working unsupervised. Training and supervision are ongoing, and staff without a relevant qualification are supported towards a Level 3 qualification. Safeguarding is led by the RSM and is central to how the service runs.
                 </p>
               </div>
               <Link

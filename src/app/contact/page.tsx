@@ -29,8 +29,8 @@ const contacts = [
     icon: ShieldAlert,
     category: "Safeguarding",
     name: "Hamza Yusuf (RSM)",
-    detail: "info@ashdensupport.co.uk",
-    href: "mailto:info@ashdensupport.co.uk",
+    detail: "hamza@ashdensupport.co.uk",
+    href: "mailto:hamza@ashdensupport.co.uk",
     note: "Safeguarding concerns should be directed to the Registered Service Manager directly. For out-of-hours safeguarding, contact the relevant local authority MASH.",
   },
   {
@@ -141,18 +141,6 @@ export default function ContactPage() {
                   <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Ofsted</p>
                   <p className="text-charcoal">To raise a concern about this service, contact Ofsted directly.</p>
                   <p className="text-grey-text mt-1">Registered provider URN: 2907824</p>
-                </div>
-                <div className="border-t border-grey-mid pt-4">
-                  <p className="text-xs uppercase tracking-wider text-grey-text mb-1">
-                    Information Commissioner&apos;s Office
-                  </p>
-                  <p className="text-charcoal">
-                    Ashden Support Ltd is registered with the ICO. Data protection enquiries should be directed to{" "}
-                    <a href="mailto:info@ashdensupport.co.uk" className="text-green hover:underline">
-                      info@ashdensupport.co.uk
-                    </a>
-                    .
-                  </p>
                 </div>
               </div>
             </div>

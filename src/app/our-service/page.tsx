@@ -7,15 +7,15 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Service",
   description:
-    "What Ashden Support provides: 1:1 staffing, sleep-in overnight cover, support planning and keywork for looked-after young people aged 16 and 17 in Birmingham.",
+    "What Ashden Support provides: a named keyworker, a support worker on every day shift, overnight cover, support planning and keywork for looked-after young people aged 16 and 17 in Birmingham.",
 };
 
 const staffingFacts = [
-  { icon: Users, title: "1:1 keyworker model", body: "Each young person has a named keyworker who leads on their support plan, conducts regular keywork sessions, and is the main point of contact for commissioners." },
-  { icon: Moon, title: "Sleep-in staff overnight", body: "A member of staff sleeps in at the property every night. Young people are not left unsupervised at any point overnight." },
-  { icon: ClipboardList, title: "Support planning", body: "We produce an individual support plan for each resident within 28 days of placement. Plans are reviewed regularly and shared with the placing authority." },
-  { icon: BookOpen, title: "Daily logs and reports", body: "Staff complete daily logs. Significant events are recorded and reported to the placing authority. Incident reports follow a standard format." },
-  { icon: Home, title: "Qualified staff", body: "All staff hold relevant qualifications in children and young people's workforce. Ongoing training is a requirement of the role, not an add-on." },
+  { icon: Users, title: "Consistent, named support", body: "Each young person has a named keyworker, allocated within 48 hours of placement, who leads on their support plan and is the main point of contact for commissioners. There is also one support worker per young person on every day shift." },
+  { icon: Moon, title: "Overnight cover", body: "Overnight cover is provided by a sleep-in worker or a waking night worker, depending on the young person's assessed needs." },
+  { icon: ClipboardList, title: "Support planning", body: "A support plan is co-produced with each young person within 48 hours of placement. Plans are reviewed regularly and shared with the placing authority. Progress is tracked using the Outcomes Star." },
+  { icon: BookOpen, title: "Daily logs and reports", body: "Staff complete daily logs. Significant events are recorded and reported to the placing authority on the same working day. Reports follow a standard format." },
+  { icon: Home, title: "Staff recruitment and training", body: "Staff are recruited through safer recruitment and complete a face-to-face induction before working unsupervised. Training and supervision are ongoing. Staff without a relevant qualification are supported towards a Level 3 qualification." },
 ];
 
 export default function OurServicePage() {
@@ -34,7 +34,7 @@ export default function OurServicePage() {
               Our Service
             </h1>
             <p className="text-xl text-grey-text leading-relaxed">
-              Semi-independent supported accommodation for looked-after young people aged 16 and 17. This is not a children&apos;s home. Staff support residents to develop independence skills and prepare for adult life.
+              Semi-independent supported accommodation for looked-after young people aged 16 and 17. This is not a children&apos;s home. Staff support young people to develop independence skills and prepare for adult life.
             </p>
           </div>
         </div>
@@ -46,23 +46,23 @@ export default function OurServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-7">
               <span className="font-display text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-green">
-                The property
+                Our homes
               </span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal mt-3 mb-6 leading-[1.05]">
-                19 The Worthings, Stirchley, Birmingham B30 3AE.
+                Ordinary houses in residential areas.
               </h2>
               <div className="space-y-4 text-grey-text leading-relaxed">
                 <p>
-                  The property is a three-bedroom house in a residential street in Stirchley, south Birmingham. At full capacity it accommodates three young people. Each resident has their own bedroom.
+                  Our homes are ordinary domestic houses on residential streets in Birmingham. Each young person has their own bedroom and is supported towards independence.
                 </p>
                 <p>
-                  The house has a shared kitchen, living room, and bathroom. It is furnished and equipped. All utility bills are included in the placement fee.
+                  Each house has a shared kitchen, living room, and bathroom. It is furnished and equipped. All utility bills are included in the placement fee.
                 </p>
                 <p>
-                  Stirchley has good transport links into Birmingham city centre and is well served by local amenities, including supermarkets, GP surgeries, and public transport. The area is residential and appropriate for young people working towards independent living.
+                  Our homes have good transport links into Birmingham city centre and are well served by local amenities, including supermarkets, GP surgeries, and public transport. The areas are residential and appropriate for young people working towards independent living.
                 </p>
                 <p>
-                  Photography of the actual property is available on request. We do not use stock images to represent our accommodation.
+                  Photography of our homes is available on request. We do not use stock images to represent our accommodation.
                 </p>
               </div>
             </div>
@@ -79,19 +79,19 @@ export default function OurServicePage() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-green mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Address</p>
-                    <p className="text-sm font-semibold text-charcoal">19 The Worthings</p>
-                    <p className="text-sm text-grey-text">Stirchley, Birmingham B30 3AE</p>
+                    <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Location</p>
+                    <p className="text-sm font-semibold text-charcoal">Birmingham</p>
+                    <p className="text-sm text-grey-text">West Midlands</p>
                   </div>
                 </div>
                 <div className="border-t border-green-light pt-4 grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Bedrooms</p>
-                    <p className="font-semibold text-charcoal">3</p>
+                    <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Own bedroom</p>
+                    <p className="font-semibold text-charcoal">Yes</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Max residents</p>
-                    <p className="font-semibold text-charcoal">3</p>
+                    <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Furnished</p>
+                    <p className="font-semibold text-charcoal">Yes</p>
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Age range</p>
@@ -106,7 +106,7 @@ export default function OurServicePage() {
                   <div className="flex items-start gap-3">
                     <Home className="w-4 h-4 text-green mt-0.5 shrink-0" />
                     <p className="text-sm text-grey-text">
-                      Property type: three-bedroom terraced house in a residential area.
+                      Home type: semi-detached house in a residential area.
                     </p>
                   </div>
                 </div>
@@ -160,13 +160,13 @@ export default function OurServicePage() {
               </h2>
               <div className="space-y-4 text-grey-text leading-relaxed">
                 <p>
-                  Young people placed at Ashden Support live in a shared house and manage their own daily routine. This is semi-independent living. Staff are present and available but do not run the house for residents.
+                  Young people placed at Ashden Support live in a shared house and manage their own daily routine. This is semi-independent living. Staff are present and available but do not run the house for young people.
                 </p>
                 <p>
-                  Each resident has scheduled keywork sessions with their named keyworker. These cover practical skills development, progress toward goals set in the support plan, and any issues the young person wants to raise.
+                  Each young person has keywork sessions with their named keyworker at least twice a week. These cover practical skills development, progress toward goals set in the support plan, and any issues the young person wants to raise.
                 </p>
                 <p>
-                  We support residents to access education, training, and employment where appropriate. We work with the placing authority on this as part of the support plan. We do not duplicate the role of the social worker or personal adviser.
+                  We support young people to access education, training, and employment where appropriate. We work with the placing authority on this as part of the support plan. We do not duplicate the role of the social worker or personal adviser.
                 </p>
                 <p>
                   Where a young person has health needs, we liaise with relevant services but do not provide health care. Our focus is on the independent living skills and the stability of the placement.
@@ -185,10 +185,13 @@ export default function OurServicePage() {
                   Ashden Support is not a children&apos;s home and does not operate as one. It is regulated under the Supported Accommodation (England) Regulations 2023, not the Children&apos;s Homes (England) Regulations 2015.
                 </p>
                 <p>
-                  We do not accept young people under 16. We do not accept young people who require residential care, enhanced therapeutic provision, or placement within a secure or semi-secure setting.
+                  We work with young people who have moderate to complex needs, including histories of placement breakdown, exploitation risk, missing episodes, trauma-related difficulties and disengagement from education.
                 </p>
                 <p>
-                  We are a small provider. We do not have capacity to accommodate young people with complex or multiple high-level needs that would require staffing or resource beyond a standard 1:1 supported accommodation model.
+                  We do not accept young people under 16. We do not accept young people who need physical restraint or Deprivation of Liberty arrangements, young people with known sexually harmful behaviour posing a risk to others, young people with a significant unmanaged arson risk, or young people whose needs require a children&apos;s home.
+                </p>
+                <p>
+                  Our role is accommodation and support towards independence. We do not take on the role of the social worker or the personal adviser.
                 </p>
                 <p>
                   If a referral does not match what we can provide, we will say so at the point of assessment rather than after a placement begins.

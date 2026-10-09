@@ -12,6 +12,7 @@ const pages = [
   { href: "/contact", label: "Contact" },
   { href: "/policies", label: "Policies" },
   { href: "/carbon-reduction-plan", label: "Carbon Reduction Plan" },
+  { href: "/social-value", label: "Social Value" },
 ];
 
 export default function Footer() {
@@ -34,7 +35,6 @@ export default function Footer() {
             </p>
             <div className="mt-5 text-xs text-white/30 space-y-1 font-medium uppercase tracking-wide">
               <p>URN 2907824 · Company No. 17013754</p>
-              <p>Registered with the ICO</p>
               <p>Supported Accommodation (England) Regulations 2023</p>
             </div>
             <div className="mt-8 flex flex-col gap-3 text-sm text-white/65">
@@ -87,7 +87,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-white/30 mb-1">Safeguarding</p>
-                <p>Contact the RSM: info@ashdensupport.co.uk</p>
+                <p>Contact the RSM: hamza@ashdensupport.co.uk</p>
               </div>
             </div>
           </div>

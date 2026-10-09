@@ -3,7 +3,6 @@ import { ShieldCheck } from "lucide-react";
 export default function CredentialsStrip({ inline = false }: { inline?: boolean }) {
   const items = [
     "Ofsted-registered · URN 2907824",
-    "ICO registered",
     "Company No. 17013754",
   ];
 

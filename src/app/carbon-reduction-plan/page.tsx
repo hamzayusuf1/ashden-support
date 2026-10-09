@@ -3,7 +3,7 @@ import CredentialsStrip from "@/components/CredentialsStrip";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Carbon Reduction Plan | Ashden Support",
+  title: "Carbon Reduction Plan",
   description:
     "Ashden Support Ltd's Carbon Reduction Plan: our commitment to reducing environmental impact and achieving Net Zero by 2050, aligned with PPN 06/21.",
 };
@@ -11,13 +11,13 @@ export const metadata: Metadata = {
 const measures = [
   {
     icon: Zap,
-    title: "Energy-efficient properties",
-    body: "We fit LED lighting and energy-efficient appliances as standard across all our services. We do not purchase high-energy equipment when lower-rated alternatives are available at reasonable cost.",
+    title: "Energy-efficient homes",
+    body: "We fit LED lighting and energy-efficient appliances as standard in our homes. We do not purchase high-energy equipment when lower-rated alternatives are available at reasonable cost.",
   },
   {
     icon: Target,
     title: "Smart energy monitoring",
-    body: "Smart meters and energy monitors are installed at our properties, giving staff and residents real-time visibility of consumption. This data feeds directly into our annual reviews.",
+    body: "Smart meters and energy monitors are installed in our homes, giving staff and young people real-time visibility of consumption. This data feeds directly into our annual reviews.",
   },
   {
     icon: ShoppingBasket,
@@ -27,7 +27,7 @@ const measures = [
   {
     icon: Recycle,
     title: "Waste reduction and recycling",
-    body: "Recycling and composting are part of the daily routine in our services. Managing waste responsibly is a practical life skill. We model it and explain why it matters.",
+    body: "Recycling and composting are part of the daily routine in our homes. Managing waste responsibly is a practical life skill. We model it and explain why it matters.",
   },
   {
     icon: Bike,
@@ -42,30 +42,30 @@ const measures = [
   {
     icon: Sprout,
     title: "Sustainability as a life skill",
-    body: "Young people in our services take part in the sustainability practices of the home. Understanding how to manage energy, reduce food waste, and make sensible household choices is part of preparing for independent living. We explain the reasons. We do not just post rules on a wall.",
+    body: "Young people in our homes take part in the sustainability practices of the home. Understanding how to manage energy, reduce food waste, and make sensible household choices is part of preparing for independent living. We explain the reasons. We do not just post rules on a wall.",
   },
 ];
 
 const targets = [
   {
     label: "From day one",
-    sublabel: "Each service",
-    title: "Measures in place before a service opens",
-    body: "LED lighting, energy-efficient appliances, smart monitoring, responsible procurement, and digital-first operations are in place before the first resident moves in. This plan is published and accessible from the start.",
+    sublabel: "The service",
+    title: "Measures in place",
+    body: "LED lighting, energy-efficient appliances, smart monitoring, responsible procurement, and digital-first operations. These measures are in place. This plan is published and accessible.",
     anchor: false,
   },
   {
     label: "Year 1",
-    sublabel: "Each service",
+    sublabel: "The service",
     title: "Complete a formal baseline emissions assessment",
-    body: "Within the first year of each service operating, we will quantify emissions across Scope 1, 2, and 3 and publish the results. This becomes the reference point for all future reduction targets for that service.",
+    body: "Within the first year of the service operating, we will quantify emissions across Scope 1, 2, and 3 and publish the results. This becomes the reference point for all future reduction targets.",
     anchor: false,
   },
   {
     label: "Year 2",
-    sublabel: "Each service",
+    sublabel: "The service",
     title: "20% reduction in Scope 2 emissions against baseline",
-    body: "Using the Year 1 baseline, we aim to reduce electricity and gas consumption by at least 20% by the end of Year 2. This involves ongoing smart monitoring, resident engagement, and reviewing tariff options including renewable energy suppliers.",
+    body: "Using the Year 1 baseline, we aim to reduce electricity and gas consumption by at least 20% by the end of Year 2. This involves ongoing smart monitoring, engagement with young people, and reviewing tariff options including renewable energy suppliers.",
     anchor: false,
   },
   {
@@ -129,7 +129,7 @@ export default function CarbonReductionPlanPage() {
               The young people we work with will live with the consequences of decisions made today. Part of what we do is help them develop responsible habits around energy, waste, and consumption. We should hold ourselves to the same standard.
             </p>
             <p>
-              This is a working document, not a tender requirement. It sets out what we are doing, what we are committing to, and when we will report back.
+              This plan sets out what we are doing, what we are committing to, and when we will report back.
             </p>
           </div>
         </div>
@@ -150,10 +150,10 @@ export default function CarbonReductionPlanPage() {
                 Ashden Support Ltd provides Ofsted-registered supported accommodation for looked-after young people aged 16 and 17. We are based in Birmingham and operate in line with the Supported Accommodation (England) Regulations 2023.
               </p>
               <p>
-                We are a small organisation. Our environmental footprint comes mainly from the accommodation we operate, staff travel, and the day-to-day running of our services. This plan covers all of that.
+                We are a small organisation. Our environmental footprint comes mainly from the accommodation we operate, staff travel, and the day-to-day running of our homes. This plan covers all of that.
               </p>
               <p>
-                Sustainability is built into how we run our services. Teaching young people to manage energy use, reduce waste, and make sensible choices about household resources is part of preparing them for independent living. That is not separate from this plan. It is part of it.
+                Sustainability is built into how we run our homes. Teaching young people to manage energy use, reduce waste, and make sensible choices about household resources is part of preparing them for independent living. That is not separate from this plan. It is part of it.
               </p>
             </div>
             <div className="lg:col-span-5">
@@ -205,19 +205,19 @@ export default function CarbonReductionPlanPage() {
                 label: "Scope 1: Direct",
                 title: "Combustion and owned vehicles",
                 desc: "Emissions we produce directly.",
-                items: ["Company vehicles used for staff travel and resident activities", "Gas heating at our accommodation properties"],
+                items: ["The company vehicle used for staff travel and activities with young people", "Gas heating in our homes"],
               },
               {
                 label: "Scope 2: Indirect",
                 title: "Purchased energy",
                 desc: "Emissions from energy we buy.",
-                items: ["Electricity consumption at our properties (lighting, appliances, heating)", "Gas for heating and hot water"],
+                items: ["Electricity consumption in our homes (lighting, appliances, heating)", "Gas for heating and hot water"],
               },
               {
                 label: "Scope 3: Value chain",
                 title: "Indirect and supply chain",
                 desc: "Wider emissions linked to our activities.",
-                items: ["Staff commuting to and from our properties", "Food and household consumables for residents", "Waste generated at our properties"],
+                items: ["Staff commuting to and from our homes", "Food and household consumables for young people", "Waste generated in our homes"],
               },
             ].map((scope) => (
               <div key={scope.label} className="bg-white border border-grey-mid rounded-2xl p-7">
@@ -256,7 +256,7 @@ export default function CarbonReductionPlanPage() {
               Carbon reduction measures
             </h2>
             <p className="text-grey-text leading-relaxed">
-              These are the measures we have committed to across our services. Some are practical decisions about how our accommodation is run. Others are part of how we support young people every day.
+              These are the measures in place in our homes. Some are practical decisions about how our accommodation is run. Others are part of how we support young people every day.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

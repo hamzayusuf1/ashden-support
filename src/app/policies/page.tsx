@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FileText, Mail } from "lucide-react";
 import CredentialsStrip from "@/components/CredentialsStrip";
 import type { Metadata } from "next";
@@ -8,12 +9,53 @@ export const metadata: Metadata = {
     "Policy list for Ashden Support Ltd. Copies available on request by emailing info@ashdensupport.co.uk.",
 };
 
-const policyList = [
-  { category: "Safeguarding", policies: ["Safeguarding and child protection policy", "Missing from placement policy", "Peer-on-peer abuse and anti-bullying policy", "Use of restraint and physical intervention"] },
-  { category: "Operations", policies: ["Health and safety policy", "Fire safety policy", "Medication policy", "Lone working policy", "Confidentiality and information sharing policy"] },
-  { category: "Staffing", policies: ["Safer recruitment policy", "Staff supervision and development policy", "Whistleblowing policy", "Equality, diversity and inclusion policy"] },
-  { category: "Young people", policies: ["Complaints and representations policy", "Behaviour support policy", "Placement breakdown and placement change policy", "Transitions and move-on policy"] },
-  { category: "Governance", policies: ["Data protection and GDPR policy", "Carbon Reduction Plan", "Business continuity policy"] },
+const policyList: {
+  category: string;
+  policies: { name: string; href?: string }[];
+}[] = [
+  {
+    category: "Safeguarding",
+    policies: [
+      { name: "Safeguarding Children and Young People Policy" },
+      { name: "Missing from Home and Care Policy" },
+      { name: "Criminal Exploitation and County Lines Policy" },
+      { name: "Counter Bullying Policy" },
+    ],
+  },
+  {
+    category: "Operations",
+    policies: [
+      { name: "Behaviour Management Policy" },
+      { name: "Substance Misuse (Drugs and Alcohol) Policy" },
+      { name: "Health and Safety Policy" },
+      { name: "Fire Risk Assessment" },
+      { name: "Business Continuity Plan" },
+    ],
+  },
+  {
+    category: "Staffing",
+    policies: [
+      { name: "Safer Recruitment Policy" },
+      { name: "Staff Disciplinary, Grievance and Supervision Policy" },
+      { name: "Whistleblowing Policy" },
+      { name: "Equality, Diversity and Inclusion Policy" },
+    ],
+  },
+  {
+    category: "Young people",
+    policies: [
+      { name: "Statement of Purpose" },
+      { name: "Young Person's Guide" },
+      { name: "Complaints and Representations Policy" },
+    ],
+  },
+  {
+    category: "Governance",
+    policies: [
+      { name: "Data Protection and Information Security Policy" },
+      { name: "Social Value and Carbon Reduction Plan", href: "/social-value" },
+    ],
+  },
 ];
 
 export default function PoliciesPage() {
@@ -49,9 +91,15 @@ export default function PoliciesPage() {
                 <h2 className="font-display text-lg font-bold text-charcoal mb-5">{group.category}</h2>
                 <ul className="space-y-3">
                   {group.policies.map((policy) => (
-                    <li key={policy} className="flex items-start gap-2.5">
+                    <li key={policy.name} className="flex items-start gap-2.5">
                       <FileText className="w-3.5 h-3.5 text-green mt-0.5 shrink-0" />
-                      <span className="text-sm text-grey-text">{policy}</span>
+                      {policy.href ? (
+                        <Link href={policy.href} className="text-sm text-green hover:underline">
+                          {policy.name}
+                        </Link>
+                      ) : (
+                        <span className="text-sm text-grey-text">{policy.name}</span>
+                      )}
                     </li>
                   ))}
                 </ul>

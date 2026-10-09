@@ -43,13 +43,13 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-charcoal font-medium">Registered Service Manager and Nominated Individual</p>
               <p>
-                Hamza Yusuf holds the roles of Registered Service Manager and Nominated Individual at Ashden Support Ltd. He is responsible for the day-to-day operation of the service, staff management, safeguarding, and the quality and consistency of support provided to residents.
+                Hamza Yusuf holds the roles of Registered Service Manager and Nominated Individual at Ashden Support Ltd. He is responsible for the day-to-day operation of the service, staff management, safeguarding, and the quality and consistency of support provided to young people.
               </p>
               <p>
-                Ashden Support was established to offer a small-scale, professionally run alternative in the Birmingham market. A consistent observation in the sector is that larger providers are often unable to give individual young people the consistent, named support that semi-independent living requires. The 1:1 keyworker model and the small capacity of the service are deliberate design choices rather than constraints.
+                Ashden&apos;s leadership brings direct experience of accommodation services for young people aged 16 and 17, including unaccompanied asylum-seeking young people, and currently runs a supported accommodation service for adults under formal oversight.
               </p>
               <p>
-                The service operates from a single property in Stirchley. There are no plans to expand rapidly. The intention is to run one service well before considering further growth.
+                Ashden Support gives looked-after young people aged 16 and 17 consistent, named support from staff who know them well, in an ordinary home rather than an institution. Each young person has a named keyworker and a support worker on every shift, so support stays consistent and focused on preparing them for independence.
               </p>
             </div>
             <div className="lg:col-span-5">
@@ -70,8 +70,8 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Contact</p>
-                    <a href="mailto:info@ashdensupport.co.uk" className="text-green hover:underline font-medium">
-                      info@ashdensupport.co.uk
+                    <a href="mailto:hamza@ashdensupport.co.uk" className="text-green hover:underline font-medium">
+                      hamza@ashdensupport.co.uk
                     </a>
                   </div>
                   <div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-grey-text leading-relaxed">
               <p>
-                Ashden Support has a written complaints and representations policy. Complaints can be made by residents, placing authorities, or any person with a legitimate interest in the welfare of a young person placed with us.
+                Ashden Support has a written complaints and representations policy. Complaints can be made by young people, placing authorities, or any person with a legitimate interest in the welfare of a young person placed with us.
               </p>
               <p>
                 Complaints are first handled internally by the Registered Service Manager. Where a complaint is not resolved to the satisfaction of the complainant, or where a complaint is about the RSM, it is referred to the independent external reviewer.
@@ -122,8 +122,8 @@ export default function AboutPage() {
                 <div>
                   <p className="text-xs uppercase tracking-wider text-grey-text mb-1">Internal: RSM</p>
                   <p className="font-semibold text-charcoal">Hamza Yusuf</p>
-                  <a href="mailto:info@ashdensupport.co.uk" className="text-green hover:underline">
-                    info@ashdensupport.co.uk
+                  <a href="mailto:hamza@ashdensupport.co.uk" className="text-green hover:underline">
+                    hamza@ashdensupport.co.uk
                   </a>
                 </div>
                 <div>
@@ -156,7 +156,6 @@ export default function AboutPage() {
                 { label: "Registered address", value: "19 The Worthings, Stirchley, Birmingham B30 3AE" },
                 { label: "Ofsted URN", value: "2907824" },
                 { label: "Regulatory framework", value: "Supported Accommodation (England) Regulations 2023" },
-                { label: "ICO registration", value: "Registered" },
               ].map(({ label, value }) => (
                 <div key={label} className="bg-warm-white border border-grey-mid rounded-xl p-5">
                   <p className="text-xs uppercase tracking-wider text-grey-text mb-1">{label}</p>

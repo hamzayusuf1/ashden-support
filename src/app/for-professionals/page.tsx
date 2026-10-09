@@ -5,49 +5,50 @@ import CredentialsStrip from "@/components/CredentialsStrip";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Professionals | Ashden Support",
+  title: "For Professionals",
   description:
     "Referral information for social workers, brokerage teams, placement teams and commissioning managers working with Ashden Support Ltd.",
 };
 
 const steps = [
   { n: "01", title: "Initial contact", body: "Send a referral summary to info@ashdensupport.co.uk or call +44 7507 112 497. Include the young person's age, current local authority, and a brief outline of their current situation and needs." },
-  { n: "02", title: "Acknowledgement within 24 hours", body: "We acknowledge all referrals within 24 hours on working days. We will either confirm we have capacity and want to proceed to assessment, or advise we are unable to take the referral and explain why." },
-  { n: "03", title: "Assessment", body: "We review the referral information and, where appropriate, arrange a pre-placement discussion. We will tell you clearly if the young person is not suitable for this service before any placement is agreed." },
-  { n: "04", title: "Placement agreement", body: "We issue a placement agreement before the young person moves in. This sets out fees, notice periods, reporting arrangements, and the terms of the placement." },
-  { n: "05", title: "Move-in and induction", body: "The young person is introduced to the property, their keyworker, and the house routines. The RSM is available during the move-in period. An initial support plan is produced within 28 days." },
+  { n: "02", title: "Acknowledgement within 24 hours", body: "We review planned referrals within 24 hours on working days. We will either confirm we have capacity and want to proceed to assessment, or advise we are unable to take the referral and explain why." },
+  { n: "03", title: "Emergency referrals", body: "Emergency and same-day referrals are assessed on an accelerated basis. We only accept a placement once we are satisfied it is safe for the young person and for the young people already living there." },
+  { n: "04", title: "Assessment", body: "We review the referral information and, where appropriate, arrange a pre-placement discussion. We will tell you clearly if the young person is not suitable for this service before any placement is agreed. Every matching decision is recorded as a written risk assessment, and the views of young people already living in the home are taken into account." },
+  { n: "05", title: "Placement agreement", body: "We issue a placement agreement before the young person moves in. This sets out fees, notice periods, reporting arrangements, and the terms of the placement." },
+  { n: "06", title: "Move-in and induction", body: "The young person is introduced to the home, their keyworker, and the house routines. The RSM is available during the move-in period. A named keyworker is allocated within 48 hours of placement and a support plan is co-produced with the young person in the same period." },
 ];
 
 const docs = [
-  "Individual support plan (within 28 days of placement)",
+  "Individual support plan (within 48 hours of placement)",
   "Daily logs, available to the placing authority on request",
-  "Incident reports, provided within 24 hours of a significant event",
+  "Significant events, reported to the placing authority on the same working day",
   "Progress reviews at the frequency agreed with the placing authority",
-  "Missing from placement notifications, in line with statutory requirements",
+  "Missing from Home and Care notifications, in line with statutory requirements",
   "Placement agreement prior to move-in",
   "End of placement report",
 ];
 
 const policies = [
-  "Safeguarding and child protection",
-  "Missing from placement",
-  "Behaviour support",
-  "Complaints and representations",
-  "Health and safety",
-  "Fire safety",
-  "Anti-bullying and peer-on-peer abuse",
-  "Equality, diversity and inclusion",
-  "Safer recruitment",
-  "Staff supervision and development",
+  "Safeguarding Children and Young People",
+  "Missing from Home and Care",
+  "Criminal Exploitation and County Lines",
+  "Behaviour Management",
+  "Counter Bullying",
+  "Substance Misuse (Drugs and Alcohol)",
+  "Complaints and Representations",
+  "Safer Recruitment",
+  "Equality, Diversity and Inclusion",
+  "Data Protection and Information Security",
 ];
 
 const commitments = [
   { title: "Named manager, always", body: "Hamza Yusuf is the named RSM and your main point of contact throughout any placement. You will not be passed between departments." },
   { title: "24-hour referral response", body: "All referral enquiries receive a written response within 24 hours on working days. We confirm capacity and suitability before moving to assessment." },
   { title: "Transparent about fit", body: "We carry out a pre-placement assessment on every referral. If a young person is not right for this service, we say so promptly." },
-  { title: "Support plan within 28 days", body: "An individual support plan is produced for every resident within 28 days of placement and shared with the placing authority." },
-  { title: "Incident reports within 24 hours", body: "Significant events are reported in writing to the placing authority within 24 hours. Daily logs are available on request." },
-  { title: "Qualified, trained staff", body: "All staff hold relevant qualifications in working with children and young people. Ongoing training is a standard requirement of the role." },
+  { title: "Support plan within 48 hours", body: "A support plan is co-produced with every young person within 48 hours of placement and shared with the placing authority. Progress is tracked using the Outcomes Star." },
+  { title: "Significant events reported same day", body: "Significant events are reported in writing to the placing authority on the same working day. Daily logs are available on request." },
+  { title: "Safer recruitment and training", body: "Staff are recruited through safer recruitment and complete a face-to-face induction before working unsupervised. Training and supervision are ongoing, and staff without a relevant qualification are supported towards a Level 3 qualification." },
 ];
 
 export default function ForProfessionalsPage() {
@@ -97,7 +98,7 @@ export default function ForProfessionalsPage() {
               </h2>
               <div className="space-y-4 text-grey-text leading-relaxed">
                 <p>
-                  We support looked-after young people aged 16 and 17, including care leavers and unaccompanied asylum-seeking young people (UASC). We work with young people placed by local authorities across Birmingham and the wider West Midlands.
+                  We support looked-after young people aged 16 and 17, including care leavers and unaccompanied asylum-seeking children (UASC). We are based in Birmingham, in the West Midlands, and accept referrals from placing authorities across England.
                 </p>
                 <p>
                   All referrals go through a pre-placement assessment. We look at each young person&apos;s current needs, history, and whether semi-independent living is appropriate at this point. We take a practical view and work with the referring professional to understand the full picture before agreeing a placement.
@@ -117,8 +118,8 @@ export default function ForProfessionalsPage() {
                     ["Placement type", "Semi-independent supported accommodation"],
                     ["Regulation", "Supported Accommodation (England) Regulations 2023"],
                     ["Ofsted URN", "2907824"],
-                    ["Geographic area", "Birmingham and West Midlands"],
-                    ["Staff qualifications", "Qualified, trained workforce"],
+                    ["Geographic area", "Placing authorities across England. Based in Birmingham, West Midlands."],
+                    ["Staff qualifications", "Safer recruitment, face-to-face induction, ongoing training"],
                     ["Response time", "Within 24 hours on working days"],
                   ].map(([label, value]) => (
                     <div key={label} className="flex justify-between gap-4 border-b border-green-light pb-3 last:border-0 last:pb-0">
@@ -176,13 +177,13 @@ export default function ForProfessionalsPage() {
               </h2>
               <div className="space-y-4 text-grey-text leading-relaxed">
                 <p>
-                  The young person&apos;s named keyworker is confirmed before move-in. The RSM is present or available throughout the induction period.
+                  A named keyworker is allocated within 48 hours of placement. The RSM is present or available throughout the induction period.
                 </p>
                 <p>
-                  A support plan is produced within 28 days and sent to the placing authority. It covers daily living, education and employment, health, relationships, and goals for the placement period.
+                  A support plan is co-produced with the young person within 48 hours of placement and sent to the placing authority. It covers daily living, education and employment, health, relationships, and goals for the placement period. Keywork sessions are held at least twice a week.
                 </p>
                 <p>
-                  Progress reviews are held at the frequency agreed with the placing authority. The RSM attends reviews where requested. Between reviews, daily logs are available on request and significant events are reported within 24 hours.
+                  Progress reviews are held at the frequency agreed with the placing authority. The RSM attends reviews where requested. Between reviews, daily logs are available on request and significant events are reported to the placing authority on the same working day.
                 </p>
                 <p>
                   Hamza Yusuf remains your named point of contact for the duration of the placement. If anything significant happens, you will hear from us first.
